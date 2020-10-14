@@ -9,6 +9,7 @@ import {Routes,RouterModule} from '@angular/router';
 import {LoginComponent} from '../common/login/login.component';
 import { from } from 'rxjs';
 import { MainComponent } from './main.component';
+import {ReactiveFormsModule} from '@angular/forms';
 const approuter : Routes = [
   {
     path:'',
@@ -42,7 +43,8 @@ const approuter : Routes = [
   imports: [
     CommonModule,
     ShareModule,
-    RouterModule.forChild(approuter)
+    RouterModule.forChild(approuter),
+    ReactiveFormsModule
   ]
 })
 export class MainModule { }

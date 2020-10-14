@@ -9,7 +9,7 @@ export class MenungangComponent implements OnInit, AfterViewInit {
 
   public menus = [
     {name :'Người dùng', url:'',icon:'user',childs:[{name:'Quản lý người dùng',url:'user/user'},{name:'Đăng xuất', url:''},{name:'Đăng nhập', url:'/login'}]},
-    {name:'Hàng hóa',url:'',icon:'signal',childs:[{name:'Quản lý đơn hàng',url:'/donhang'},{name:'Quản lý loại hàng',url:'/loaihang'},{name:'Quản lý sản phẩm',url:'/sanpham'}]}];
+    {name:'Hàng hóa',url:'',icon:'signal',childs:[{name:'Quản lý danh mục',url:'/donhang'},{name:'Quản lý loại hàng',url:'/loaihang'},{name:'Quản lý sản phẩm',url:'/sanpham'}]}];
     constructor() { } 
     ngOnInit(): void {
     }
